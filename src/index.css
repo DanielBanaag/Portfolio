@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: #172522;
+  background: #f5f4ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --ink: #172522;
+  --muted: #586762;
+  --paper: #f5f4ef;
+  --white: #fffefa;
+  --blueprint-line: rgba(91, 124, 145, 0.045);
+  --wash-blue: rgba(174, 213, 224, 0.58);
+  --wash-edge: rgba(230, 211, 188, 0.48);
+  --line: #d7dcd5;
+  --green: #164b3e;
+  --green-bright: #c0e0a1;
+  --orange: #e77a52;
+  --mono: 'DM Mono', 'Courier New', monospace;
+  --display: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(ellipse 58% 38% at 69% 18%, var(--wash-blue), transparent 100%),
+    radial-gradient(ellipse 118% 92% at 50% 42%, transparent 28%, var(--wash-edge) 100%),
+    linear-gradient(135deg, #f5f5ef 0%, #f2ede4 100%);
+  background-size: 100vw 100vh, 100vw 100vh, 100vw 100vh;
+  background-position: center top, center top, center top;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed;
+}
+
+body::before {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='.3'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  content: '';
+  mix-blend-mode: multiply;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+body::after {
+  position: fixed;
+  z-index: 0;
+  inset: -12%;
+  background:
+    radial-gradient(ellipse 52% 43% at 34% 24%, rgba(83, 158, 120, 0.68), transparent 70%),
+    radial-gradient(ellipse 58% 48% at 55% 43%, rgba(95, 169, 132, 0.42), transparent 72%),
+    radial-gradient(ellipse 48% 42% at 76% 25%, rgba(111, 180, 203, 0.7), transparent 70%),
+    radial-gradient(ellipse 56% 48% at 70% 64%, rgba(123, 164, 207, 0.38), transparent 72%),
+    radial-gradient(ellipse 58% 42% at 39% 82%, rgba(231, 205, 177, 0.3), transparent 70%);
+  content: '';
+  filter: blur(78px);
+  opacity: 0.94;
+  pointer-events: none;
+  transform: translate3d(-1.5%, -0.5%, 0) scale(1.02);
+  animation: aurora-drift 56s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-drift {
+  0% {
+    transform: translate3d(-1.5%, -0.5%, 0) scale(1.02);
+  }
+  50% {
+    transform: translate3d(1.2%, 1%, 0) scale(1.045);
+  }
+  100% {
+    transform: translate3d(-0.4%, -1%, 0) scale(1.025);
+  }
+}
+
+@media (max-width: 680px) {
+  :root {
+    --blueprint-line: rgba(91, 124, 145, 0.035);
+    --wash-blue: rgba(174, 213, 224, 0.46);
+    --wash-edge: rgba(230, 211, 188, 0.36);
+  }
+
+  body {
+    background-size: 100vw 100vh, 100vw 100vh, 100vw 100vh;
+  }
+
+  body::before {
+    background-size: 210px 210px;
+    opacity: 0.09;
+  }
+
+  body::after {
+    filter: blur(58px);
+    opacity: 0.78;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::after {
+    animation: none;
+    transform: none;
+  }
+}
+
+body,
+button,
+a {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+}
+
+button,
+a {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+::selection {
+  color: var(--ink);
+  background: var(--green-bright);
+}
+
+:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 4px;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  overflow: clip;
+}
+
+#root::before {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--blueprint-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--blueprint-line) 1px, transparent 1px);
+  background-size: 32px 32px;
+  content: '';
+  pointer-events: none;
+}
+
+@media (max-width: 680px) {
+  #root::before {
+    background-size: 30px 30px;
+  }
+}
