@@ -30,19 +30,14 @@ export default function ProjectsPage() {
               </div>
               <div className="project-card__links">
                 <a className="button button--dark" href="https://mana-by-cosmos.onrender.com/" target="_blank" rel="noreferrer">View MANA <ArrowMark /></a>
-                <span className="placeholder-link">Screenshot to add</span>
               </div>
             </div>
-            <div className="project-card__visual" aria-label="Placeholder for a MANA project screenshot">
-              <div className="project-window">
-                <div className="project-window__bar"><span></span><span></span><span></span><small>MANA / PREVIEW</small></div>
-                <div className="project-window__body">
-                  <span className="project-window__caption">PROJECT VISUAL</span>
-                  <div className="project-window__art" aria-hidden="true"><span></span><span></span><span></span></div>
-                  <p>Screenshot placeholder</p>
-                  <small>Replace with an image you can share</small>
-                </div>
-              </div>
+            <div className="project-card__visual">
+              <img
+                className="project-card__image"
+                src="/MANA.png"
+                alt="MANA sign-in page for a disaster response social media analytics platform, showing email and password fields, CAPTCHA verification, and a Secure Sign In button."
+              />
             </div>
           </article>
           <CharacterIllustration pose="laptop" />
