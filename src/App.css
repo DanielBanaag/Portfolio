@@ -209,6 +209,9 @@ a:hover .arrow-mark {
   color: #000000;
   font-size: 15px;
   line-height: 1.8;
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
 }
 
 .hero__actions {
@@ -652,10 +655,10 @@ html {
 .profile-photo-placeholder__face {
   position: relative;
   z-index: 1;
-  display: grid;
+  display: block;
   width: 200px;
   aspect-ratio: 1;
-  place-items: center;
+  object-fit: cover;
   border: 8px solid rgba(255, 254, 250, 0.82);
   border-radius: 50%;
   color: var(--green);
@@ -993,6 +996,16 @@ html {
   min-width: 0;
 }
 
+.about .section-heading h1,
+.about .section-heading__description,
+.about__education > .eyebrow,
+.about .education-card__body h2,
+.about .education-card__school,
+.about .education-card__detail,
+.about .education-card__date {
+  color: #000000;
+}
+
 .about__education {
   display: grid;
   gap: 20px;
@@ -1032,6 +1045,14 @@ html {
 
 .section-space {
   padding-block: 88px 96px;
+}
+
+.skills .section-heading h1,
+.skills .section-heading__description,
+.skill-group h2,
+.skill-list li,
+.skills-marquee__group li {
+  color: #000000;
 }
 
 .skills .section-heading,
@@ -1341,6 +1362,9 @@ html {
   color: var(--muted);
   font-size: 12px;
   line-height: 1.7;
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
 }
 
 .project-card__role {
@@ -1668,7 +1692,7 @@ html {
   padding: 0 12px;
   border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 8px;
-  color: #1f3a32;
+  color: #000000;
   background:
     linear-gradient(135deg, rgba(174, 213, 224, 0.34), rgba(255, 254, 250, 0.58) 48%, rgba(231, 122, 82, 0.18)),
     rgba(255, 254, 250, 0.52);
@@ -1683,7 +1707,7 @@ html {
 }
 
 .contact__links a > span:first-child {
-  color: #bdd1bf;
+  color: #000000;
   font-family: var(--mono);
   font-size: 8px;
 }
@@ -1691,7 +1715,7 @@ html {
 .contact__links a:hover,
 .contact__email:hover {
   border-color: rgba(255, 255, 255, 0.92);
-  color: #1f3a32;
+  color: #000000;
   background:
     linear-gradient(135deg, rgba(174, 213, 224, 0.42), rgba(255, 254, 250, 0.62) 48%, rgba(231, 122, 82, 0.22)),
     rgba(255, 254, 250, 0.58);

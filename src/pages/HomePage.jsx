@@ -101,7 +101,7 @@ export default function HomePage() {
         <h1 id="hero-title">{profile.name}<span className="hero__period">.</span></h1>
         <p className="hero__role">{profile.role}</p>
         <p className="hero__intro">
-          I’m Daniel M. Banaag, a Software Engineering student interested in QA and software testing. I’m also developing my frontend and UI/UX skills, and I’m open to internship opportunities where I can learn and contribute.
+          I’m Daniel M. Banaag, a Software Engineering student interested in QA and software testing. I am also experienced in frontend development and UI/UX design. I’m open to internship opportunities in QA, software development, web development, and other technical areas where I can learn and contribute.
         </p>
         <div className="hero__actions">
           <a className="button button--dark" href="#projects" {...magneticHandlers}>Explore projects <ArrowMark /></a>
@@ -111,10 +111,14 @@ export default function HomePage() {
       </div>
 
       <div className="hero__artwork">
-        <div className="profile-photo-placeholder reveal" role="img" aria-label="Portrait placeholder for a future photo of Daniel M. Banaag">
+        <div className="profile-photo-placeholder reveal">
           <span className="profile-photo-placeholder__halo" aria-hidden="true"></span>
-          <span className="profile-photo-placeholder__face" aria-hidden="true">DMB</span>
-          <span className="profile-photo-placeholder__label">PHOTO</span>
+          <img
+            className="profile-photo-placeholder__face"
+            src="/4f123eac-36d9-4005-a5ec-5a92221eec36.jpg"
+            alt="Daniel M. Banaag"
+          />
+          <span className="profile-photo-placeholder__label" aria-hidden="true">PHOTO</span>
         </div>
         <div className="qa-visual reveal" aria-label="Interactive QA practice checklist">
           <div className="qa-visual__topline">

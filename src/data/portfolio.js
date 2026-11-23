@@ -11,12 +11,12 @@ export const skillGroups = [
   {
     title: 'Quality assurance',
     number: '01',
-    skills: ['Manual testing', 'Test cases', 'Bug reporting', 'Jira'],
+    skills: ['Manual testing', 'Test cases', 'Bug reporting', 'Regression testing', 'Functional testing', 'Jira'],
   },
   {
     title: 'Development',
     number: '02',
-    skills: ['JavaScript', 'React', 'HTML', 'CSS', 'GitHub'],
+    skills: ['JavaScript', 'React', 'HTML', 'CSS', 'Java', 'C++', 'PHP', 'GitHub'],
   },
   {
     title: 'Design',

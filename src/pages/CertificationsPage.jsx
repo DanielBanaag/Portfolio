@@ -16,10 +16,8 @@ export default function CertificationsPage() {
   return (
     <section id="certifications" data-section="certifications" className="certifications page-width section-space portfolio-section" aria-labelledby="certifications-title">
       <SectionHeading
-        eyebrow="CONTINUED LEARNING"
         titleId="certifications-title"
         title="Certifications."
-        description="Certificates and learning milestones from coursework and independent study."
       />
       <div className="certifications__content">
         <div className="certification-list" aria-label="Certification list">
