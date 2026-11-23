@@ -22,7 +22,7 @@ export default function AboutPage() {
         <SectionHeading
           eyebrow="A LITTLE ABOUT ME"
           titleId="about-title"
-          title={<>Curious by nature.<br />Careful by practice.</>}
+          title={<>Thoughtful in design.<br />Thorough in testing.</>}
           description="I am a Software Engineering student with a main interest in QA and software testing. I am also developing my frontend and UI/UX skills, and I am open to learning and contributing as part of a team."
         />
         <div className="about__education reveal">

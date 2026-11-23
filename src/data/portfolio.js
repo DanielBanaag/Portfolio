@@ -4,7 +4,7 @@ export const profile = {
   email: 'dbanaag6@gmail.com',
   linkedin: 'https://www.linkedin.com/in/daniel-noeh-banaag-626b33388/',
   github: 'https://github.com/DanielBanaag',
-  resume: '/resume.pdf',
+  resume: '/Daniel_Banaag.pdf',
 }
 
 export const skillGroups = [

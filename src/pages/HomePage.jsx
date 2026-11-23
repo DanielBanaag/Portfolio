@@ -118,7 +118,6 @@ export default function HomePage() {
             src="/4f123eac-36d9-4005-a5ec-5a92221eec36.jpg"
             alt="Daniel M. Banaag"
           />
-          <span className="profile-photo-placeholder__label" aria-hidden="true">PHOTO</span>
         </div>
         <div className="qa-visual reveal" aria-label="Interactive QA practice checklist">
           <div className="qa-visual__topline">
@@ -174,7 +173,6 @@ export default function HomePage() {
           <p className="qa-visual__caption"><span>+</span> A careful eye for the small things.</p>
         </div>
       </div>
-      <div className="hero__index" aria-hidden="true">PORTFOLIO<br />2026</div>
     </section>
   )
 }
