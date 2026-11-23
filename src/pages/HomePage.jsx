@@ -170,7 +170,6 @@ export default function HomePage() {
               <div className="qa-sheet__footer"><span>OBSERVE</span><span>DOCUMENT</span><span>VERIFY</span></div>
             </div>
           )}
-          <p className="qa-visual__caption"><span>+</span> A careful eye for the small things.</p>
         </div>
       </div>
     </section>

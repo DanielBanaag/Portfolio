@@ -40,7 +40,6 @@ export default function ProjectsPage() {
             </div>
           </article>
         </div>
-        <p className="projects__note reveal"><span aria-hidden="true">+</span> More projects can be added here when you are ready to share their details.</p>
       </div>
     </section>
   )

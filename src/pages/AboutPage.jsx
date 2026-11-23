@@ -23,7 +23,7 @@ export default function AboutPage() {
           eyebrow="A LITTLE ABOUT ME"
           titleId="about-title"
           title={<>Thoughtful in design.<br />Thorough in testing.</>}
-          description="I am a Software Engineering student with a main interest in QA and software testing. I am also developing my frontend and UI/UX skills, and I am open to learning and contributing as part of a team."
+          description="I’m a Software Engineering student with a strong interest in quality assurance and software testing. I’m also experienced in frontend development and UI/UX design, and I’m eager to keep learning, collaborate with a team, and contribute to meaningful projects."
         />
         <div className="about__education reveal">
           <p className="eyebrow">EDUCATION</p>
