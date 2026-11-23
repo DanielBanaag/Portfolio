@@ -1,5 +1,4 @@
 import SectionHeading from '../components/SectionHeading.jsx'
-import CharacterIllustration from '../components/CharacterIllustration.jsx'
 import { skillGroups } from '../data/portfolio.js'
 
 export default function SkillsPage() {
@@ -8,7 +7,6 @@ export default function SkillsPage() {
   return (
     <section id="skills" data-section="skills" className="skills page-width section-space portfolio-section" aria-labelledby="skills-title">
       <SectionHeading
-        number="02"
         eyebrow="TOOLS & SKILLS"
         titleId="skills-title"
         title="A toolkit in progress."
@@ -18,14 +16,13 @@ export default function SkillsPage() {
         <div className="skill-groups">
           {skillGroups.map((group) => (
             <article className="skill-group reveal" key={group.number}>
-              <div className="skill-group__heading"><span>{group.number}</span><h2>{group.title}</h2></div>
+              <div className="skill-group__heading"><h2>{group.title}</h2></div>
               <ul className="skill-list">
                 {group.skills.map((skill) => <li key={skill}>{skill}</li>)}
               </ul>
             </article>
           ))}
         </div>
-        <CharacterIllustration pose="point" />
       </div>
       <div className="skills-marquee reveal" role="region" aria-label="Skills and technologies" tabIndex={0}>
         <div className="skills-marquee__track">

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import ArrowMark from '../components/ArrowMark.jsx'
-import CharacterIllustration from '../components/CharacterIllustration.jsx'
 import { magneticHandlers } from '../components/motion.js'
 import { profile } from '../data/portfolio.js'
 
@@ -99,7 +98,6 @@ export default function HomePage() {
   return (
     <section id="home" data-section="home" className="hero page-width portfolio-section" aria-labelledby="hero-title">
       <div className="hero__copy reveal">
-        <p className="eyebrow hero__eyebrow"><span>STUDENT PORTFOLIO</span>QA & SOFTWARE TESTING</p>
         <h1 id="hero-title">{profile.name}<span className="hero__period">.</span></h1>
         <p className="hero__role">{profile.role}</p>
         <p className="hero__intro">
@@ -113,6 +111,11 @@ export default function HomePage() {
       </div>
 
       <div className="hero__artwork">
+        <div className="profile-photo-placeholder reveal" role="img" aria-label="Portrait placeholder for a future photo of Daniel M. Banaag">
+          <span className="profile-photo-placeholder__halo" aria-hidden="true"></span>
+          <span className="profile-photo-placeholder__face" aria-hidden="true">DMB</span>
+          <span className="profile-photo-placeholder__label">PHOTO</span>
+        </div>
         <div className="qa-visual reveal" aria-label="Interactive QA practice checklist">
           <div className="qa-visual__topline">
             <span>FIELD NOTES / 001</span>
@@ -166,7 +169,6 @@ export default function HomePage() {
           )}
           <p className="qa-visual__caption"><span>+</span> A careful eye for the small things.</p>
         </div>
-        <CharacterIllustration pose="wave" />
       </div>
       <div className="hero__index" aria-hidden="true">PORTFOLIO<br />2026</div>
     </section>

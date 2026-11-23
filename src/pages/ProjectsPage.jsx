@@ -1,5 +1,4 @@
 import SectionHeading from '../components/SectionHeading.jsx'
-import CharacterIllustration from '../components/CharacterIllustration.jsx'
 import ArrowMark from '../components/ArrowMark.jsx'
 
 export default function ProjectsPage() {
@@ -7,7 +6,6 @@ export default function ProjectsPage() {
     <section id="projects" data-section="projects" className="projects section-band portfolio-section" aria-labelledby="projects-title">
       <div className="page-width">
         <SectionHeading
-          number="03"
           eyebrow="SELECTED WORK"
           titleId="projects-title"
           title="Projects & contributions."
@@ -20,13 +18,14 @@ export default function ProjectsPage() {
               <h2>MANA</h2>
               <p className="project-card__formal-name">Manila Advisory Network Alert</p>
               <p className="project-card__summary">MANA is a disaster response social media analytics system that turns Facebook and X posts into cluster-based emergency insights, sentiment scores, priority monitoring, and recommendations for local government disaster teams.</p>
-              <div className="project-card__role">
-                <span className="detail-label">MY CONTRIBUTION</span>
-                <p>UI/UX design in Figma</p>
-              </div>
-              <div className="project-card__role">
-                <span className="detail-label">TOOL</span>
-                <p>Figma</p>
+              <div className="project-card__contributions">
+                <span className="detail-label">MY CONTRIBUTIONS</span>
+                <ul>
+                  <li><strong>UI/UX Design</strong><span>Designed the interface and user experience in Figma.</span></li>
+                  <li><strong>Quality Assurance</strong><span>Tested features, identified and documented bugs, and maintained QA documentation.</span></li>
+                  <li><strong>Frontend Development</strong><span>Contributed to the development of the user-facing application.</span></li>
+                  <li><strong>Backend Development</strong><span>Contributed to backend development and system functionality.</span></li>
+                </ul>
               </div>
               <div className="project-card__links">
                 <a className="button button--dark" href="https://mana-by-cosmos.onrender.com/" target="_blank" rel="noreferrer">View MANA <ArrowMark /></a>
@@ -40,7 +39,6 @@ export default function ProjectsPage() {
               />
             </div>
           </article>
-          <CharacterIllustration pose="laptop" />
         </div>
         <p className="projects__note reveal"><span aria-hidden="true">+</span> More projects can be added here when you are ready to share their details.</p>
       </div>

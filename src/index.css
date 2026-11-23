@@ -2,8 +2,8 @@
 
 :root {
   font-family: 'DM Sans', 'Segoe UI', sans-serif;
-  color: #172522;
-  background: #f5f4ef;
+  color: #263833;
+  background: #F5F6F1;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -11,13 +11,13 @@
   font-optical-sizing: auto;
   font-weight: 400;
 
-  --ink: #172522;
+  --ink: #263833;
   --muted: #586762;
-  --paper: #f5f4ef;
-  --white: #fffefa;
-  --blueprint-line: rgba(91, 124, 145, 0.045);
-  --wash-blue: rgba(174, 213, 224, 0.58);
-  --wash-edge: rgba(230, 211, 188, 0.48);
+  --paper: #F5F6F1;
+  --white: #fcfdf8;
+  --blueprint-line: rgba(91, 124, 145, 0.065);
+  --wash-blue: #E2EDF0;
+  --wash-edge: #E4EEE6;
   --line: #d7dcd5;
   --green: #164b3e;
   --green-bright: #c0e0a1;
@@ -33,16 +33,18 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 88px;
+  overflow-x: clip;
 }
 
 body {
   min-width: 320px;
+  overflow-x: clip;
   margin: 0;
   background-color: var(--paper);
   background-image:
-    radial-gradient(ellipse 58% 38% at 69% 18%, var(--wash-blue), transparent 100%),
-    radial-gradient(ellipse 118% 92% at 50% 42%, transparent 28%, var(--wash-edge) 100%),
-    linear-gradient(135deg, #f5f5ef 0%, #f2ede4 100%);
+    radial-gradient(ellipse 58% 38% at 69% 18%, rgba(226, 237, 240, 0.72), transparent 100%),
+    radial-gradient(ellipse 118% 92% at 50% 42%, transparent 28%, rgba(228, 238, 230, 0.58) 100%),
+    linear-gradient(135deg, #F5F6F1 0%, #E4EEE6 48%, #E2EDF0 100%);
   background-size: 100vw 100vh, 100vw 100vh, 100vw 100vh;
   background-position: center top, center top, center top;
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -93,9 +95,9 @@ body::after {
 
 @media (max-width: 680px) {
   :root {
-    --blueprint-line: rgba(91, 124, 145, 0.035);
-    --wash-blue: rgba(174, 213, 224, 0.46);
-    --wash-edge: rgba(230, 211, 188, 0.36);
+    --blueprint-line: rgba(91, 124, 145, 0.055);
+    --wash-blue: rgba(226, 237, 240, 0.62);
+    --wash-edge: rgba(228, 238, 230, 0.48);
   }
 
   body {

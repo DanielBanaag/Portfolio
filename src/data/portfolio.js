@@ -1,10 +1,9 @@
-// Replace these starter values with your own details before publishing.
 export const profile = {
   name: 'Daniel M. Banaag',
   role: 'Software Engineering student',
-  email: 'your.email@example.com',
-  linkedin: 'https://www.linkedin.com/in/your-profile',
-  github: 'https://github.com/your-username',
+  email: 'dbanaag6@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/daniel-noeh-banaag-626b33388/',
+  github: 'https://github.com/DanielBanaag',
   resume: '/resume.pdf',
 }
 

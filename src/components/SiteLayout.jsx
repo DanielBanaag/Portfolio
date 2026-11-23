@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import ArrowMark from './ArrowMark.jsx'
 import { magneticHandlers } from './motion.js'
-import { profile } from '../data/portfolio.js'
 import HomePage from '../pages/HomePage.jsx'
 import AboutPage from '../pages/AboutPage.jsx'
 import SkillsPage from '../pages/SkillsPage.jsx'
@@ -27,10 +26,6 @@ function SiteHeader({ activeSection }) {
   return (
     <header className="site-header-wrap">
       <div className="site-header">
-        <a className="wordmark" href="#home" aria-label={`${profile.name} home`} onClick={closeMenu}>
-          <span className="wordmark__stamp">QA</span>
-          <span>{profile.name}<small>Portfolio / 2026</small></span>
-        </a>
         <button
           className="menu-toggle"
           type="button"
